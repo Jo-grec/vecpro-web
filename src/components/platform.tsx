@@ -77,18 +77,32 @@ export default function Platform() {
 
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
 
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto flex max-w-6xl flex-col items-center text-center">
 
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#008C95]">
             The VECPRO Ecosystem
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight text-[#102A35] sm:text-5xl">
-            One system.
-            <span className="block bg-gradient-to-r from-[#006B78] to-[#159BD3] bg-clip-text text-transparent">
-              Connected surveillance.
-            </span>
-          </h2>
+          <div className="mt-4 flex w-full items-center justify-center gap-4 sm:gap-8 lg:gap-14">
+            <img
+              src="/logo/aedex.png"
+              alt="AEDEX logo"
+              className="h-16 w-20 object-contain sm:h-20 sm:w-28 lg:h-24 lg:w-36"
+            />
+
+            <h2 className="text-4xl font-bold tracking-tight text-[#102A35] sm:text-5xl">
+              One system.
+              <span className="block bg-gradient-to-r from-[#006B78] to-[#159BD3] bg-clip-text text-transparent">
+                Connected surveillance.
+              </span>
+            </h2>
+
+            <img
+              src="/logo/aedify.png"
+              alt="AEDIFY logo"
+              className="h-16 w-20 object-contain sm:h-20 sm:w-28 lg:h-24 lg:w-36"
+            />
+          </div>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
             VECPRO connects community reporting, intelligent verification,

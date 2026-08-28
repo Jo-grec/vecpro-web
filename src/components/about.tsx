@@ -5,8 +5,7 @@ const benefits = [
     description:
       "AI analyzes submitted images to verify mosquito breeding sites.",
     icon: "✦",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    image: "/images/dashboard.png",
   },
   {
     number: "02",
@@ -14,8 +13,7 @@ const benefits = [
     description:
       "Forecasts dengue risk to support earlier intervention.",
     icon: "↗",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    image: "/images/forecasting.png",
   },
   {
     number: "03",
@@ -23,8 +21,7 @@ const benefits = [
     description:
       "Turns community reports into actionable surveillance data.",
     icon: "◎",
-    image:
-      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80",
+    image: "/images/community.png",
   },
 ];
 

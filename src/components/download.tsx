@@ -67,7 +67,7 @@ export default function DownloadSection() {
           <div className="flex flex-col items-center px-8 pb-12 lg:px-10 lg:pb-0">
 
             <a
-              href="#"
+              href="/download"
               className="flex w-full max-w-[260px] items-center justify-center gap-3 rounded-xl bg-white px-6 py-4 font-semibold text-[#006B78] shadow-lg transition-all duration-200 hover:-translate-y-1 hover:bg-[#EAF8FA] hover:shadow-xl"
             >
               <Download size={19} />

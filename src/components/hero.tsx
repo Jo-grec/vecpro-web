@@ -37,7 +37,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="#download"
+              href="/download"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#006B78] to-[#159BD3] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
             >
               <span>↓</span>
@@ -74,20 +74,11 @@ export default function Hero() {
           <div className="relative ml-auto w-full max-w-[620px]">
 
             <div className="overflow-hidden rounded-2xl border border-[#CDE8EC] bg-white shadow-2xl">
-              {/* Replace this area with the AEDISYS dashboard image later */}
-              <div className="flex aspect-[16/10] items-center justify-center bg-gradient-to-br from-[#006B78] via-[#008C95] to-[#102A35]">
-                <div className="text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-2xl text-white">
-                    +
-                  </div>
-
-                  <p className="text-lg font-semibold text-white">
-                    AEDIFY Dashboard
-                  </p>
-
-
-                </div>
-              </div>
+              <img
+                src="/images/dashboard.png"
+                alt="AEDIFY surveillance dashboard"
+                className="block h-auto w-full"
+              />
             </div>
 
             {/* Mobile app placeholder */}

@@ -21,15 +21,23 @@ export default function Header() {
         {/* VECPRO Logo / Wordmark */}
         <a
           href="#home"
-          className="group flex flex-col leading-none"
+          className="group flex items-center gap-2"
         >
-          <span className="text-[22px] font-bold tracking-[0.18em] text-[#102A35] transition-colors group-hover:text-[#006B78]">
-            VECPRO
-          </span>
+          <img
+            src="/logo/vecpro.png"
+            alt="VECPRO logo"
+            className="h-13 w-13 object-contain"
+          />
 
-          <span className="mt-1 text-[8px] font-medium tracking-[0.08em] text-[#008C95]">
-            SMARTER SURVEILLANCE. SAFER COMMUNITIES.
-          </span>
+          <div className="flex flex-col leading-none">
+            <span className="text-[22px] font-bold tracking-[0.18em] text-[#102A35] transition-colors group-hover:text-[#006B78]">
+              VECPRO
+            </span>
+
+            <span className="mt-1 text-[8px] font-medium tracking-[0.08em] text-[#008C95]">
+              SMARTER SURVEILLANCE. SAFER COMMUNITIES.
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
@@ -55,7 +63,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <a
-          href="#download"
+          href="/download"
           className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-[#006B78] to-[#159BD3] px-5 py-2.5 text-[13px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md lg:flex"
         >
           <Download size={15} strokeWidth={2} />
@@ -105,7 +113,7 @@ export default function Header() {
           ))}
 
           <a
-            href="#download"
+            href="/download"
             onClick={() => setIsMenuOpen(false)}
             className="mt-3 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#006B78] to-[#159BD3] px-5 py-3 text-sm font-semibold text-white transition-colors hover:shadow-md"
           >
