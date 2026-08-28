@@ -25,7 +25,7 @@ export default function Header() {
           className="group flex flex-col leading-none"
         >
           <span className="text-[22px] font-bold tracking-[0.18em] text-slate-900 transition-colors group-hover:text-emerald-800">
-            AEDISYS
+            VECPRO
           </span>
 
           <span className="mt-1 text-[8px] font-medium tracking-[0.08em] text-emerald-700">
