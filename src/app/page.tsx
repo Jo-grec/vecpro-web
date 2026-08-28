@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Platform from "@/components/platform";
 import Faqs from "@/components/faqs";
+import Download from "@/components/download";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Platform />
       <Faqs />
+      <Download />
 
       <section id="home" className="min-h-screen">
         {/* Hero will go here */}
