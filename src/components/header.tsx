@@ -5,7 +5,7 @@ import { Menu, X, Download } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },   
+  { label: "About", href: "#about" },
   { label: "Platform", href: "#platform" },
   { label: "FAQs", href: "#faqs" },
   { label: "Contact", href: "#contact" },
@@ -18,16 +18,16 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-6 lg:px-8">
 
-        {/* AEDISYS Logo / Wordmark */}
+        {/* VECPRO Logo / Wordmark */}
         <a
           href="#home"
           className="group flex flex-col leading-none"
         >
-          <span className="text-[22px] font-bold tracking-[0.18em] text-slate-900 transition-colors group-hover:text-emerald-800">
+          <span className="text-[22px] font-bold tracking-[0.18em] text-[#102A35] transition-colors group-hover:text-[#006B78]">
             VECPRO
           </span>
 
-          <span className="mt-1 text-[8px] font-medium tracking-[0.08em] text-emerald-700">
+          <span className="mt-1 text-[8px] font-medium tracking-[0.08em] text-[#008C95]">
             SMARTER SURVEILLANCE. SAFER COMMUNITIES.
           </span>
         </a>
@@ -40,14 +40,14 @@ export default function Header() {
               href={item.href}
               className={`relative py-2 text-[13px] font-medium transition-colors ${
                 index === 0
-                  ? "text-emerald-800"
-                  : "text-slate-600 hover:text-emerald-800"
+                  ? "text-[#006B78]"
+                  : "text-slate-600 hover:text-[#008C95]"
               }`}
             >
               {item.label}
 
               {index === 0 && (
-                <span className="absolute -bottom-[2px] left-0 h-[2px] w-full rounded-full bg-emerald-700" />
+                <span className="absolute -bottom-[2px] left-0 h-[2px] w-full rounded-full bg-[#008C95]" />
               )}
             </a>
           ))}
@@ -56,7 +56,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <a
           href="#download"
-          className="hidden items-center gap-2 rounded-full bg-emerald-800 px-5 py-2.5 text-[13px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-emerald-900 hover:shadow-md lg:flex"
+          className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-[#006B78] to-[#159BD3] px-5 py-2.5 text-[13px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md lg:flex"
         >
           <Download size={15} strokeWidth={2} />
           Download App
@@ -66,7 +66,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="rounded-lg p-2 text-slate-800 transition-colors hover:bg-slate-100 lg:hidden"
+          className="rounded-lg p-2 text-[#102A35] transition-colors hover:bg-[#EAF8FA] lg:hidden"
           aria-label={
             isMenuOpen ? "Close navigation menu" : "Open navigation menu"
           }
@@ -96,8 +96,8 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
               className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
                 index === 0
-                  ? "bg-emerald-50 text-emerald-800"
-                  : "text-slate-700 hover:bg-emerald-50 hover:text-emerald-800"
+                  ? "bg-[#EAF8FA] text-[#006B78]"
+                  : "text-slate-700 hover:bg-[#EAF8FA] hover:text-[#008C95]"
               }`}
             >
               {item.label}
@@ -107,7 +107,7 @@ export default function Header() {
           <a
             href="#download"
             onClick={() => setIsMenuOpen(false)}
-            className="mt-3 flex items-center justify-center gap-2 rounded-full bg-emerald-800 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-900"
+            className="mt-3 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#006B78] to-[#159BD3] px-5 py-3 text-sm font-semibold text-white transition-colors hover:shadow-md"
           >
             <Download size={16} />
             Download App

@@ -28,17 +28,20 @@ const technologies = [
 const appFeatures = [
   {
     title: "Report Breeding Sites",
-    description: "Capture and submit photos of potential mosquito breeding sites.",
+    description:
+      "Capture and submit photos of potential mosquito breeding sites.",
     icon: "▣",
   },
   {
     title: "Geotagging",
-    description: "Automatically records the location and timestamp of reports.",
+    description:
+      "Automatically records the location and timestamp of reports.",
     icon: "⌖",
   },
   {
     title: "Report Tracking",
-    description: "View submitted reports and monitor their verification status.",
+    description:
+      "View submitted reports and monitor their verification status.",
     icon: "☷",
   },
 ];
@@ -46,34 +49,43 @@ const appFeatures = [
 const dashboardFeatures = [
   {
     title: "Risk Heatmaps",
-    description: "Visualize mosquito and dengue risk levels across the community.",
+    description:
+      "Visualize mosquito and dengue risk levels across the community.",
     icon: "▰",
   },
   {
     title: "Verified Reports",
-    description: "Review AI-verified reports together with their risk assessments.",
+    description:
+      "Review AI-verified reports together with their risk assessments.",
     icon: "▤",
   },
   {
     title: "Interventions",
-    description: "Monitor and manage response activities based on identified risks.",
+    description:
+      "Monitor and manage response activities based on identified risks.",
     icon: "✓",
   },
 ];
 
 export default function Platform() {
   return (
-    <section id="platform" className="bg-[#f7faf8]">
-      {/* Platform Introduction */}
+    <section id="platform" className="bg-[#F6FBFC]">
+
+      {/* ========================================================= */}
+      {/* PLATFORM INTRODUCTION */}
+      {/* ========================================================= */}
+
       <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">
+
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#008C95]">
             The VECPRO Ecosystem
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-[#102A35] sm:text-5xl">
             One system.
-            <span className="block text-emerald-800">
+            <span className="block bg-gradient-to-r from-[#006B78] to-[#159BD3] bg-clip-text text-transparent">
               Connected surveillance.
             </span>
           </h2>
@@ -83,175 +95,441 @@ export default function Platform() {
             risk analysis, forecasting, and intervention management through
             AEDEX and AEDIFY.
           </p>
+
         </div>
 
-        {/* AEDEX + AEDIFY */}
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
 
-          {/* AEDEX */}
-          <article className="overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm">
-            <div className="grid min-h-[420px] items-center gap-8 bg-gradient-to-br from-emerald-50 to-white p-8 md:grid-cols-[0.8fr_1.2fr]">
+        {/* ========================================================= */}
+        {/* AEDEX */}
+        {/* ========================================================= */}
 
-              {/* App Placeholder */}
-              <div className="flex justify-center">
-                <div className="flex h-[330px] w-[170px] items-center justify-center rounded-[30px] border-[7px] border-slate-900 bg-slate-100 shadow-xl">
+        <article className="relative mt-16 overflow-hidden rounded-[32px] border border-[#BFE5EA] bg-gradient-to-br from-[#EAF8FA] via-[#F6FBFC] to-white shadow-sm">
+
+          {/* Decorative background */}
+          <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#159BD3]/10 blur-3xl" />
+
+          <div className="pointer-events-none absolute -bottom-32 -right-24 h-80 w-80 rounded-full bg-[#006B78]/10 blur-3xl" />
+
+          {/* Large floating ring */}
+          <div className="pointer-events-none absolute right-10 top-8 h-28 w-28 rounded-full border border-[#008C95]/10" />
+
+          <div className="pointer-events-none absolute right-20 top-16 h-12 w-12 rounded-full border border-[#159BD3]/10" />
+
+          {/* Floating dots */}
+          <div className="pointer-events-none absolute bottom-10 right-12 grid grid-cols-5 gap-2 opacity-30">
+            {Array.from({ length: 25 }).map((_, i) => (
+              <span
+                key={i}
+                className="h-1.5 w-1.5 rounded-full bg-[#008C95]"
+              />
+            ))}
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 grid items-center gap-12 p-8 md:p-12 lg:grid-cols-2 lg:p-14">
+
+            {/* ===================================================== */}
+            {/* AEDEX VISUAL */}
+            {/* ===================================================== */}
+
+            <div className="flex justify-center">
+
+              <div className="relative flex h-[430px] w-full max-w-[520px] items-center justify-center overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white/70 via-[#EAF8FA]/70 to-[#DDF4F7]/70 shadow-inner">
+
+                {/* Decorative circles */}
+                <div className="pointer-events-none absolute -left-10 top-12 h-32 w-32 rounded-full border border-[#159BD3]/10" />
+
+                <div className="pointer-events-none absolute -left-5 top-17 h-12 w-12 rounded-full bg-[#008C95]/10" />
+
+                <div className="pointer-events-none absolute bottom-5 right-5 h-28 w-28 rounded-full border border-[#008C95]/10" />
+
+                {/* Dots */}
+                <div className="pointer-events-none absolute left-8 bottom-8 grid grid-cols-4 gap-2 opacity-30">
+                  {Array.from({ length: 16 }).map((_, i) => (
+                    <span
+                      key={i}
+                      className="h-1.5 w-1.5 rounded-full bg-[#159BD3]"
+                    />
+                  ))}
+                </div>
+
+                {/* Glow behind phone */}
+                <div className="pointer-events-none absolute h-64 w-64 rounded-full bg-[#159BD3]/10 blur-3xl" />
+
+                {/* Phone */}
+                <div className="relative z-10 flex h-[360px] w-[185px] items-center justify-center rounded-[38px] border-[7px] border-[#102A35] bg-white shadow-2xl">
+
+                  {/* Phone top speaker */}
+                  <div className="absolute left-1/2 top-0 h-5 w-20 -translate-x-1/2 rounded-b-2xl bg-[#102A35]" />
+
                   <div className="text-center">
-                    <p className="text-lg font-bold text-emerald-800">
+
+                    <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#EAF8FA]">
+                      <span className="text-2xl text-[#008C95]">
+                        ◇
+                      </span>
+                    </div>
+
+                    <p className="text-xl font-bold text-[#006B78]">
                       AEDEX
                     </p>
-                    <p className="mt-1 text-xs text-slate-500">
-                      App Preview
+
+                    <p className="mt-1 text-xs text-slate-400">
+                      Mobile App Preview
                     </p>
+
                   </div>
+
                 </div>
+
               </div>
 
-              {/* App Information */}
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">
-                  Community Application
-                </p>
-
-                <h3 className="mt-2 text-3xl font-bold text-slate-900">
-                  AEDEX
-                </h3>
-
-                <p className="mt-1 text-sm font-medium text-slate-500">
-                  Mobile Application
-                </p>
-
-                <p className="mt-5 text-sm leading-6 text-slate-600">
-                  Empowering the community to report suspected mosquito
-                  breeding sites and participate in dengue surveillance.
-                </p>
-
-                <div className="mt-6 space-y-4">
-                  {appFeatures.map((feature) => (
-                    <div key={feature.title} className="flex gap-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-sm text-emerald-800 shadow-sm ring-1 ring-emerald-100">
-                        {feature.icon}
-                      </div>
-
-                      <div>
-                        <h4 className="text-sm font-semibold text-slate-900">
-                          {feature.title}
-                        </h4>
-                        <p className="mt-0.5 text-xs leading-5 text-slate-500">
-                          {feature.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
-          </article>
 
-          {/* AEDIFY */}
-          <article className="overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-sm">
-            <div className="grid min-h-[420px] items-center gap-8 bg-gradient-to-br from-blue-50 to-white p-8 md:grid-cols-[1.2fr_0.8fr]">
 
-              {/* Dashboard Information */}
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-blue-700">
-                  Management Dashboard
-                </p>
+            {/* ===================================================== */}
+            {/* AEDEX INFORMATION */}
+            {/* ===================================================== */}
 
-                <h3 className="mt-2 text-3xl font-bold text-slate-900">
-                  AEDIFY
-                </h3>
+            <div>
 
-                <p className="mt-1 text-sm font-medium text-slate-500">
-                  Web Dashboard
-                </p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#008C95]">
+                Community Application
+              </p>
 
-                <p className="mt-5 text-sm leading-6 text-slate-600">
-                  Providing LGUs and authorized personnel with data,
-                  insights, and tools to monitor risks and support
-                  intervention decisions.
-                </p>
+              <h3 className="mt-2 text-4xl font-bold text-[#102A35]">
+                AEDEX
+              </h3>
 
-                <div className="mt-6 space-y-4">
-                  {dashboardFeatures.map((feature) => (
-                    <div key={feature.title} className="flex gap-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-sm text-blue-700 shadow-sm ring-1 ring-blue-100">
-                        {feature.icon}
-                      </div>
+              <p className="mt-1 text-sm font-medium text-[#008C95]">
+                Mobile Application
+              </p>
 
-                      <div>
-                        <h4 className="text-sm font-semibold text-slate-900">
-                          {feature.title}
-                        </h4>
-                        <p className="mt-0.5 text-xs leading-5 text-slate-500">
-                          {feature.description}
-                        </p>
-                      </div>
+              <p className="mt-6 max-w-lg text-base leading-7 text-slate-600">
+                Empowering communities to report suspected mosquito
+                breeding sites and contribute to dengue surveillance.
+              </p>
+
+
+              {/* Features */}
+              <div className="mt-8 space-y-5">
+
+                {appFeatures.map((feature) => (
+
+                  <div
+                    key={feature.title}
+                    className="group flex gap-4"
+                  >
+
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#BFE5EA] bg-white text-lg text-[#006B78] shadow-sm transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-[#8DD5DD] group-hover:shadow-md">
+                      {feature.icon}
                     </div>
-                  ))}
-                </div>
-              </div>
 
-              {/* Dashboard Placeholder */}
-              <div className="flex justify-center">
-                <div className="w-full max-w-[300px] overflow-hidden rounded-xl border-4 border-slate-800 bg-slate-900 shadow-xl">
-                  <div className="flex h-7 items-center gap-1 bg-slate-800 px-3">
-                    <span className="h-2 w-2 rounded-full bg-slate-500" />
-                    <span className="h-2 w-2 rounded-full bg-slate-500" />
-                    <span className="h-2 w-2 rounded-full bg-slate-500" />
+                    <div>
+
+                      <h4 className="font-semibold text-[#102A35]">
+                        {feature.title}
+                      </h4>
+
+                      <p className="mt-1 text-sm leading-6 text-slate-500">
+                        {feature.description}
+                      </p>
+
+                    </div>
+
                   </div>
 
-                  <div className="flex h-[210px] items-center justify-center bg-slate-100">
-                    <div className="text-center">
-                      <p className="font-bold text-emerald-800">
-                        AEDIFY
-                      </p>
-                      <p className="mt-1 text-xs text-slate-500">
-                        Dashboard Preview
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                ))}
+
               </div>
+
             </div>
-          </article>
-        </div>
+
+          </div>
+
+        </article>
+
+
+        {/* ========================================================= */}
+        {/* AEDIFY */}
+        {/* ========================================================= */}
+
+        <article className="relative mt-8 overflow-hidden rounded-[32px] border border-[#BFE5EA] bg-gradient-to-bl from-[#EAF8FA] via-[#F6FBFC] to-white shadow-sm">
+
+          {/* Decorative background */}
+          <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#159BD3]/10 blur-3xl" />
+
+          <div className="pointer-events-none absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-[#006B78]/10 blur-3xl" />
+
+          {/* Floating rings */}
+          <div className="pointer-events-none absolute left-10 top-8 h-28 w-28 rounded-full border border-[#008C95]/10" />
+
+          <div className="pointer-events-none absolute left-20 top-16 h-12 w-12 rounded-full border border-[#159BD3]/10" />
+
+          {/* Floating dots */}
+          <div className="pointer-events-none absolute bottom-10 left-12 grid grid-cols-5 gap-2 opacity-30">
+            {Array.from({ length: 25 }).map((_, i) => (
+              <span
+                key={i}
+                className="h-1.5 w-1.5 rounded-full bg-[#008C95]"
+              />
+            ))}
+          </div>
+
+
+          {/* Content */}
+          <div className="relative z-10 grid items-center gap-12 p-8 md:p-12 lg:grid-cols-2 lg:p-14">
+
+            {/* ===================================================== */}
+            {/* AEDIFY INFORMATION */}
+            {/* ===================================================== */}
+
+            <div>
+
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#008C95]">
+                Management Dashboard
+              </p>
+
+              <h3 className="mt-2 text-4xl font-bold text-[#102A35]">
+                AEDIFY
+              </h3>
+
+              <p className="mt-1 text-sm font-medium text-[#008C95]">
+                Web Dashboard
+              </p>
+
+              <p className="mt-6 max-w-lg text-base leading-7 text-slate-600">
+                Providing LGUs and authorized personnel with the data and
+                insights needed to monitor risks and support intervention.
+              </p>
+
+
+              {/* Features */}
+              <div className="mt-8 space-y-5">
+
+                {dashboardFeatures.map((feature) => (
+
+                  <div
+                    key={feature.title}
+                    className="group flex gap-4"
+                  >
+
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#BFE5EA] bg-white text-lg text-[#006B78] shadow-sm transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-[#8DD5DD] group-hover:shadow-md">
+                      {feature.icon}
+                    </div>
+
+                    <div>
+
+                      <h4 className="font-semibold text-[#102A35]">
+                        {feature.title}
+                      </h4>
+
+                      <p className="mt-1 text-sm leading-6 text-slate-500">
+                        {feature.description}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
+
+
+            {/* ===================================================== */}
+            {/* AEDIFY VISUAL */}
+            {/* ===================================================== */}
+
+            <div className="flex justify-center lg:justify-end">
+
+              <div className="relative flex h-[430px] w-full max-w-[560px] items-center justify-center overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white/70 via-[#EAF8FA]/70 to-[#DDF4F7]/70 shadow-inner">
+
+                {/* Decorative circles */}
+                <div className="pointer-events-none absolute right-8 top-8 h-28 w-28 rounded-full border border-[#008C95]/10" />
+
+                <div className="pointer-events-none absolute right-16 top-16 h-12 w-12 rounded-full bg-[#159BD3]/10" />
+
+                <div className="pointer-events-none absolute bottom-8 left-8 h-24 w-24 rounded-full border border-[#159BD3]/10" />
+
+                {/* Glow */}
+                <div className="pointer-events-none absolute -bottom-10 right-0 h-64 w-64 rounded-full bg-[#006B78]/10 blur-3xl" />
+
+
+                {/* Dashboard */}
+                <div className="relative z-10 w-[90%] max-w-[500px] overflow-hidden rounded-2xl border-[5px] border-[#102A35] bg-[#102A35] shadow-2xl">
+
+                  {/* Browser Bar */}
+                  <div className="flex h-9 items-center gap-1.5 bg-[#102A35] px-4">
+
+                    <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+
+                  </div>
+
+
+                  {/* Dashboard Preview */}
+                  <div className="aspect-[16/10] bg-white">
+
+                    <div className="flex h-full">
+
+                      {/* Sidebar */}
+                      <div className="hidden w-[22%] flex-col gap-4 bg-[#102A35] p-4 sm:flex">
+
+                        <div className="h-3 w-14 rounded bg-white/20" />
+
+                        <div className="h-2 w-full rounded bg-[#008C95]" />
+                        <div className="h-2 w-4/5 rounded bg-white/10" />
+                        <div className="h-2 w-3/4 rounded bg-white/10" />
+                        <div className="h-2 w-5/6 rounded bg-white/10" />
+
+                      </div>
+
+
+                      {/* Dashboard Main */}
+                      <div className="flex-1 bg-[#F6FBFC] p-4">
+
+                        {/* Header */}
+                        <div className="flex items-center justify-between">
+
+                          <div>
+                            <div className="h-3 w-20 rounded bg-[#102A35]/20" />
+                            <div className="mt-2 h-2 w-28 rounded bg-[#102A35]/10" />
+                          </div>
+
+                          <div className="h-7 w-7 rounded-full bg-[#EAF8FA]" />
+
+                        </div>
+
+
+                        {/* Stat Cards */}
+                        <div className="mt-5 grid grid-cols-3 gap-2">
+
+                          <div className="rounded-lg bg-white p-3 shadow-sm">
+                            <div className="h-2 w-10 rounded bg-[#008C95]/30" />
+                            <div className="mt-2 h-4 w-12 rounded bg-[#102A35]/20" />
+                          </div>
+
+                          <div className="rounded-lg bg-white p-3 shadow-sm">
+                            <div className="h-2 w-10 rounded bg-[#159BD3]/30" />
+                            <div className="mt-2 h-4 w-12 rounded bg-[#102A35]/20" />
+                          </div>
+
+                          <div className="rounded-lg bg-white p-3 shadow-sm">
+                            <div className="h-2 w-10 rounded bg-[#006B78]/30" />
+                            <div className="mt-2 h-4 w-12 rounded bg-[#102A35]/20" />
+                          </div>
+
+                        </div>
+
+
+                        {/* Map / Chart */}
+                        <div className="mt-3 grid grid-cols-[1.3fr_0.7fr] gap-3">
+
+                          <div className="relative h-32 overflow-hidden rounded-lg bg-white shadow-sm">
+
+                            <div className="absolute inset-5 rounded-full bg-[#EAF8FA]" />
+
+                            <div className="absolute left-[35%] top-[30%] h-12 w-12 rounded-full bg-[#159BD3]/30 blur-md" />
+
+                            <div className="absolute left-[48%] top-[45%] h-8 w-8 rounded-full bg-[#008C95]/40 blur-sm" />
+
+                            <div className="absolute left-[55%] top-[40%] h-5 w-5 rounded-full bg-[#006B78]/60" />
+
+                          </div>
+
+                          <div className="h-32 rounded-lg bg-white p-3 shadow-sm">
+
+                            <div className="h-2 w-12 rounded bg-[#102A35]/20" />
+
+                            <div className="mt-5 flex h-16 items-end gap-1.5">
+
+                              <span className="h-6 flex-1 rounded-t bg-[#159BD3]/30" />
+                              <span className="h-10 flex-1 rounded-t bg-[#159BD3]/40" />
+                              <span className="h-8 flex-1 rounded-t bg-[#008C95]/40" />
+                              <span className="h-14 flex-1 rounded-t bg-[#008C95]/60" />
+                              <span className="h-11 flex-1 rounded-t bg-[#006B78]/50" />
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </div>
 
-      {/* Technology */}
-      <div className="border-y border-slate-200 bg-white">
+
+      {/* ========================================================= */}
+      {/* TECHNOLOGY */}
+      {/* ========================================================= */}
+
+      <div className="border-y border-[#D8EEF1] bg-white">
+
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">
+
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#008C95]">
               VECPRO Technology
             </p>
 
-            <h2 className="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold text-[#102A35] sm:text-4xl">
               From reports to actionable intelligence.
             </h2>
+
           </div>
 
+
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
             {technologies.map((technology) => (
+
               <article
                 key={technology.title}
-                className="rounded-2xl border border-slate-200 bg-[#f7faf8] p-6"
+                className="group rounded-2xl border border-[#D8EEF1] bg-[#F6FBFC] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#8DD5DD] hover:bg-[#EAF8FA] hover:shadow-lg"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-800">
+
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#006B78] to-[#159BD3] text-lg text-white shadow-sm">
                   {technology.icon}
                 </div>
 
-                <h3 className="mt-5 font-bold text-slate-900">
+                <h3 className="mt-5 font-bold text-[#102A35]">
                   {technology.title}
                 </h3>
 
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {technology.description}
                 </p>
+
               </article>
+
             ))}
+
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

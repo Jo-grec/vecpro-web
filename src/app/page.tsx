@@ -4,20 +4,18 @@ import About from "@/components/about";
 import Platform from "@/components/platform";
 import Faqs from "@/components/faqs";
 import Download from "@/components/download";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex min-h-screen flex-col">
       <Header />
       <Hero />
       <About />
       <Platform />
       <Faqs />
       <Download />
-
-      <section id="home" className="min-h-screen">
-        {/* Hero will go here */}
-      </section>
+      <Footer />
     </main>
   );
 }
