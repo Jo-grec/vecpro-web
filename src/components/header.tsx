@@ -5,10 +5,9 @@ import { Menu, X, Download } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Technology", href: "#technology" },
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "About", href: "#about" },   
   { label: "Platform", href: "#platform" },
+  { label: "FAQs", href: "#faqs" },
   { label: "Contact", href: "#contact" },
 ];
 
