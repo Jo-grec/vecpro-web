@@ -18,7 +18,7 @@ export default function Hero() {
           </p>
 
           {/* Heading */}
-          <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-[#102A35] sm:text-5xl lg:text-[58px]">
+          <h1 className="text-4xl font-bold leading-[1.08] tracking-tight text-[#102A35] sm:text-5xl lg:text-[50px]">
             AI-Powered
             <br />
             Mosquito Surveillance
@@ -85,9 +85,7 @@ export default function Hero() {
                     AEDIFY Dashboard
                   </p>
 
-                  <p className="mt-2 text-sm text-white/60">
-                    Replace with your platform image
-                  </p>
+
                 </div>
               </div>
             </div>

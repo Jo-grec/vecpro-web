@@ -103,7 +103,7 @@ export default function Platform() {
         {/* AEDEX */}
         {/* ========================================================= */}
 
-        <article className="relative mt-16 overflow-hidden rounded-[32px] border border-[#BFE5EA] bg-gradient-to-br from-[#EAF8FA] via-[#F6FBFC] to-white shadow-sm">
+        <article className="relative mt-16 overflow-hidden rounded-[32px] border border-[#BFE5EA] bg-gradient-to-r from-[#006B78] via-[#008C95] to-[#159BD3] shadow-sm">
 
           {/* Decorative background */}
           <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#159BD3]/10 blur-3xl" />
@@ -193,19 +193,19 @@ export default function Platform() {
 
             <div>
 
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#008C95]">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#EAF8FA]">
                 Community Application
               </p>
 
-              <h3 className="mt-2 text-4xl font-bold text-[#102A35]">
+              <h3 className="mt-2 text-4xl font-bold text-white">
                 AEDEX
               </h3>
 
-              <p className="mt-1 text-sm font-medium text-[#008C95]">
+              <p className="mt-1 text-sm font-medium text-[#D9F7FB]">
                 Mobile Application
               </p>
 
-              <p className="mt-6 max-w-lg text-base leading-7 text-slate-600">
+              <p className="mt-6 max-w-lg text-base leading-7 text-white/80">
                 Empowering communities to report suspected mosquito
                 breeding sites and contribute to dengue surveillance.
               </p>
@@ -218,20 +218,20 @@ export default function Platform() {
 
                   <div
                     key={feature.title}
-                    className="group flex gap-4"
+                    className="group flex gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-sm"
                   >
 
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#BFE5EA] bg-white text-lg text-[#006B78] shadow-sm transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-[#8DD5DD] group-hover:shadow-md">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/15 bg-white/10 text-lg text-white shadow-sm transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-white/25 group-hover:bg-white/15">
                       {feature.icon}
                     </div>
 
                     <div>
 
-                      <h4 className="font-semibold text-[#102A35]">
+                      <h4 className="font-semibold text-white">
                         {feature.title}
                       </h4>
 
-                      <p className="mt-1 text-sm leading-6 text-slate-500">
+                      <p className="mt-1 text-sm leading-6 text-sky-50/80">
                         {feature.description}
                       </p>
 
