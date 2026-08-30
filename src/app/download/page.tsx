@@ -89,6 +89,12 @@ function PhonePreview() {
           "
         >
 
+          <img
+            src="/images/download.png"
+            alt="Download app preview"
+            className="h-full w-full object-cover"
+          />
+
           {/* ================================================= */}
           {/* APP HEADER */}
           {/* ================================================= */}
@@ -623,7 +629,7 @@ export default function DownloadPage() {
               >
                 Report suspected mosquito breeding sites, contribute
                 geotagged observations, and help strengthen community-based
-                dengue surveillance through VECPRO.
+                dengue surveillance through AEDEX.
               </p>
 
 
