@@ -23,24 +23,11 @@ export default function DownloadSection() {
 
               {/* Placeholder screen */}
               <div className="flex h-full items-center justify-center rounded-[18px] bg-white">
-                <div className="text-center">
-
-                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#EAF8FA]">
-                    <Smartphone
-                      size={22}
-                      className="text-[#008C95]"
-                    />
-                  </div>
-
-                  <p className="mt-3 text-sm font-bold text-[#006B78]">
-                    AEDEX
-                  </p>
-
-                  <p className="mt-1 text-[8px] text-slate-400">
-                    App Preview
-                  </p>
-
-                </div>
+                <img
+                  src="/logo/aedex.png"
+                  alt="AEDEX logo"
+                  className="h-20 w-auto object-contain"
+                />
               </div>
             </div>
           </div>

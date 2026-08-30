@@ -41,7 +41,7 @@ export default function About() {
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
 
           {/* Heading */}
-          <div>
+          <div className="text-center lg:text-left">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#008C95]">
               About VECPRO
             </p>
@@ -77,7 +77,7 @@ export default function About() {
         <div className="mt-20">
 
           {/* Section Heading */}
-          <div className="mb-10">
+          <div className="mb-10 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#008C95]">
               Why VECPRO?
             </p>
@@ -165,7 +165,7 @@ export default function About() {
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
 
           {/* Heading */}
-          <div>
+          <div className="text-center lg:text-left">
 
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#008C95]">
               Who It's For
