@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-geist-sans),sans-serif;
 }
 
 body {
@@ -9,4 +10,5 @@ body {
   background: #ffffff;
   color: #0f172a;
   min-height: 100%;
+  font-family: var(--font-geist-sans),sans-serif;
 }

@@ -41,14 +41,24 @@ export default function Footer() {
 
             <a
               href="#home"
-              className="text-2xl font-bold tracking-[0.12em] text-white transition-colors hover:text-[#EAF8FA]"
+              className="flex items-center gap-3 transition-colors hover:text-[#EAF8FA]"
             >
-              VECPRO
-            </a>
+              <img
+                src="/logo/vecpro.png"
+                alt="VECPRO logo"
+                className="h-12 w-12 object-contain"
+              />
 
-            <p className="mt-2 text-[10px] font-medium tracking-wide text-[#159BD3]">
-              SMARTER SURVEILLANCE. SAFER COMMUNITIES.
-            </p>
+              <div className="flex flex-col leading-none">
+                <span className="text-2xl font-bold tracking-[0.12em] text-white">
+                  VECPRO
+                </span>
+
+                <span className="mt-2 text-[10px] font-medium tracking-wide text-[#159BD3]">
+                  SMARTER SURVEILLANCE. SAFER COMMUNITIES.
+                </span>
+              </div>
+            </a>
 
             <p className="mt-4 max-w-xs text-xs leading-5 text-white/55">
               An integrated mosquito surveillance and dengue risk forecasting

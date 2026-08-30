@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Decorative background */}
       <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#BDEFF3]/50 blur-3xl" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-4 px-6 py-8 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 lg:px-8 lg:py-12">
+      <div className="mx-auto grid max-w-7xl items-center gap-0 px-6 py-8 sm:gap-2 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.95fr_1.05fr] lg:gap-10 lg:px-8 lg:py-12">
 
         {/* LEFT CONTENT */}
         <div className="relative z-10 max-w-2xl">
@@ -33,12 +33,12 @@ export default function Hero() {
             community-submitted reports and advanced spatiotemporal
             modeling in Iloilo City.
           </p>
-
           {/* Buttons */}
-          <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+          <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+
             <a
               href="/download"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#006B78] to-[#159BD3] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+              className="inline-flex w-auto items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#006B78] to-[#159BD3] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
             >
               <span>↓</span>
               Download Mobile App
@@ -46,40 +46,50 @@ export default function Hero() {
 
             <a
               href="#platform"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#008C95] bg-white px-6 py-3.5 text-sm font-semibold text-[#006B78] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#EAF8FA]"
+              className="inline-flex w-auto items-center justify-center gap-2 rounded-lg border border-[#008C95] bg-white px-6 py-3.5 text-sm font-semibold text-[#006B78] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#EAF8FA]"
             >
               <span>▷</span>
               Explore Platform
             </a>
+
           </div>
         </div>
 
+
         {/* RIGHT VISUAL */}
-        <div className="relative z-10 -mt-2 lg:mt-0">
+        <div className="relative z-10 -mt-6 lg:mt-0">
 
           {/* Decorative dots */}
           <div className="absolute -left-6 bottom-12 hidden h-32 w-32 opacity-40 lg:block">
+
             <div className="grid grid-cols-6 gap-3">
+
               {Array.from({ length: 36 }).map((_, i) => (
                 <span
                   key={i}
                   className="h-1.5 w-1.5 rounded-full bg-[#159BD3]"
                 />
               ))}
+
             </div>
+
           </div>
+
 
           {/* Hero mockup */}
           <div className="relative left-1/2 w-[115%] max-w-[820px] -translate-x-1/2 lg:left-auto lg:ml-auto lg:w-full lg:max-w-[720px] lg:translate-x-0">
+
             <img
               src="/images/heromockup.svg"
               alt="VECPRO platform mockup"
               className="block h-auto w-full"
             />
+
           </div>
+
         </div>
 
       </div>
     </section>
   );
-}
+} 

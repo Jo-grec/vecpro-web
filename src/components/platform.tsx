@@ -83,7 +83,7 @@ export default function Platform() {
             The VECPRO Ecosystem
           </p>
 
-          <div className="mt-4 flex w-full items-center justify-center gap-4 sm:gap-8 lg:gap-14">
+          <div className="mt-4 mb-10 flex w-full items-center justify-center gap-4 sm:gap-8 lg:gap-14">
 
             <img
               src="/logo/aedex.png"
@@ -106,7 +106,7 @@ export default function Platform() {
 
           </div>
 
-          <p className="mt-6 text-lg leading-8 text-slate-600">
+          <p className="text-lg leading-8 text-slate-600">
             VECPRO connects community reporting, intelligent verification,
             risk analysis, forecasting, and intervention management through
             AEDEX and AEDIFY.
