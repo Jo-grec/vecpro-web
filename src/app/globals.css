@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: light;
+}
+
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-geist-sans),sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -10,5 +16,18 @@ body {
   background: #ffffff;
   color: #0f172a;
   min-height: 100%;
-  font-family: var(--font-geist-sans),sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
