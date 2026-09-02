@@ -83,7 +83,7 @@ export default function Platform() {
             The VECPRO Ecosystem
           </p>
 
-          <div className="mt-4 mb-10 flex w-full items-center justify-center gap-2 sm:gap-4 lg:gap-8">
+          <div className="mt-4 mb-10 flex w-full items-center justify-center gap-1 sm:gap-3 lg:gap-6">
 
             <img
               src="/logo/aedex.png"
