@@ -331,14 +331,14 @@ export default function DownloadPage() {
             <img
               src="/logo/vecpro.png"
               alt="VECPRO logo"
-              className="h-12 w-12 shrink-0 object-contain"
+              className="h-9 w-9 shrink-0 object-contain sm:h-12 sm:w-12"
             />
 
             <div className="flex min-w-0 flex-col leading-none">
 
               <span
                 className="
-                  text-[20px]
+                  text-[15px]
                   font-bold
                   tracking-[0.16em]
                   text-[#102A35]
@@ -348,20 +348,6 @@ export default function DownloadPage() {
                 "
               >
                 VECPRO
-              </span>
-
-              <span
-                className="
-                  mt-1
-                  whitespace-nowrap
-                  text-[7px]
-                  font-medium
-                  tracking-[0.06em]
-                  text-[#008C95]
-                  sm:text-[8px]
-                "
-              >
-                SMARTER SURVEILLANCE. SAFER COMMUNITIES.
               </span>
 
             </div>
