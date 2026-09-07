@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { appDownload } from "@/lib/download";
 import {
   Download,
   Smartphone,
@@ -29,7 +31,7 @@ const features = [
 ];
 
 const requirements = [
-  "Android 8.0 or later",
+  appDownload.android,
   "Internet connection",
   "Camera access",
   "Location services",
@@ -323,7 +325,7 @@ export default function DownloadPage() {
 
           {/* VECPRO BRAND */}
 
-          <a
+          <Link
             href="/"
             className="group flex min-w-0 shrink-0 items-center gap-2"
           >
@@ -352,12 +354,12 @@ export default function DownloadPage() {
 
             </div>
 
-          </a>
+          </Link>
 
 
           {/* BACK BUTTON */}
 
-          <a
+          <Link
             href="/"
             className="
               flex
@@ -381,7 +383,7 @@ export default function DownloadPage() {
               Back to VECPRO
             </span>
 
-          </a>
+          </Link>
 
         </div>
 
@@ -615,7 +617,8 @@ export default function DownloadPage() {
               >
                 Report suspected mosquito breeding sites, contribute
                 geotagged observations, and help strengthen community-based
-                dengue surveillance through AEDEX.
+                dengue surveillance through AEDEX. Download the Android test build
+                below to try the app.
               </p>
 
 
@@ -642,7 +645,7 @@ export default function DownloadPage() {
                   </p>
 
                   <p className="mt-1 text-xs font-bold text-[#102A35] sm:text-sm">
-                    v1.0.0
+                    {appDownload.version}
                   </p>
 
                 </div>
@@ -668,7 +671,7 @@ export default function DownloadPage() {
                   </p>
 
                   <p className="mt-1 text-xs font-bold text-[#102A35] sm:text-sm">
-                    XX MB
+                    {appDownload.size}
                   </p>
 
                 </div>
@@ -693,7 +696,8 @@ export default function DownloadPage() {
               >
 
                 <a
-                  href="#"
+                  href={appDownload.href}
+                  download={appDownload.filename}
                   className="
                     inline-flex
                     items-center
@@ -716,7 +720,7 @@ export default function DownloadPage() {
 
                   <Download size={18} />
 
-                  Download APK
+                  Download Test APK
 
                 </a>
 
@@ -728,7 +732,7 @@ export default function DownloadPage() {
                     className="text-[#008C95]"
                   />
 
-                  Android 8.0+
+                  {appDownload.android}
 
                 </div>
 
@@ -738,6 +742,18 @@ export default function DownloadPage() {
               {/* ================================================= */}
               {/* FEATURES */}
               {/* ================================================= */}
+
+              <div className="mt-6 rounded-xl border border-[#D8EEF1] bg-white/80 p-4 text-sm leading-6 text-slate-600">
+                <h2 className="font-bold text-[#006B78]">Install the Android test build</h2>
+                <p className="mt-2 break-all">File: {appDownload.filename}</p>
+                <ol className="mt-3 list-decimal space-y-2 pl-5">
+                  <li>Download the APK on your Android phone, or transfer it from your computer.</li>
+                  <li>Open the downloaded file. If Android asks, allow your browser or file manager to install apps from this source.</li>
+                  <li>Tap Install, then open the app. This test build appears as &quot;moskito&quot; on your device.</li>
+                  <li>Allow camera and location access when using report features.</li>
+                </ol>
+                <p className="mt-3">This is a test release. Features may change and you may encounter bugs. This APK is for Android devices; it cannot be installed on iPhone or iPad.</p>
+              </div>
 
               <div className="mt-7">
 

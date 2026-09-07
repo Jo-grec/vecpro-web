@@ -1,4 +1,6 @@
-import { Download, Smartphone } from "lucide-react";
+import Link from "next/link";
+import { appDownload } from "@/lib/download";
+import { Download } from "lucide-react";
 
 export default function DownloadSection() {
   return (
@@ -44,7 +46,7 @@ export default function DownloadSection() {
             </h2>
 
             <p className="mt-4 max-w-lg text-sm leading-6 text-white/75 sm:text-base">
-              Download the AEDEX mobile app and help us build a
+              Download the AEDEX Android test build and help us build a
               dengue-free Iloilo City.
             </p>
 
@@ -54,16 +56,19 @@ export default function DownloadSection() {
           <div className="flex flex-col items-center px-8 pb-12 lg:px-10 lg:pb-0">
 
             <a
-              href="/download"
+              href={appDownload.href} download={appDownload.filename}
               className="flex w-full max-w-[260px] items-center justify-center gap-3 rounded-xl bg-white px-6 py-4 font-semibold text-[#006B78] shadow-lg transition-all duration-200 hover:-translate-y-1 hover:bg-[#EAF8FA] hover:shadow-xl"
             >
               <Download size={19} />
-              Download the App
+              Direct Download
             </a>
 
             <p className="mt-3 text-xs font-medium text-white/65">
-              Available for Android
+              {appDownload.android} &middot; {appDownload.version} &middot; {appDownload.size}
             </p>
+            <Link href="/download" className="mt-3 text-sm font-medium text-white underline underline-offset-4">
+              Installation instructions and app details
+            </Link>
 
           </div>
 

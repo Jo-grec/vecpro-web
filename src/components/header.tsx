@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { appDownload } from "@/lib/download";
 import { Menu, X, Download } from "lucide-react";
 
 const navItems = [
@@ -67,7 +68,7 @@ export default function Header() {
           className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-[#006B78] to-[#159BD3] px-5 py-2.5 text-[13px] font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md lg:flex"
         >
           <Download size={15} strokeWidth={2} />
-          Download App
+          Download APK
         </a>
 
         {/* Mobile Menu Button */}
@@ -113,12 +114,12 @@ export default function Header() {
           ))}
 
           <a
-            href="/download"
+            href={appDownload.href} download={appDownload.filename}
             onClick={() => setIsMenuOpen(false)}
             className="mt-3 flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#006B78] to-[#159BD3] px-5 py-3 text-sm font-semibold text-white transition-colors hover:shadow-md"
           >
             <Download size={16} />
-            Download App
+            Download APK
           </a>
         </nav>
       </div>

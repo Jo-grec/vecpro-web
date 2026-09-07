@@ -1,3 +1,4 @@
+import { appDownload } from "@/lib/download";
 export default function Hero() {
   return (
     <section
@@ -41,7 +42,7 @@ export default function Hero() {
               className="inline-flex w-auto items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#006B78] to-[#159BD3] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
             >
               <span>↓</span>
-              Download Mobile App
+              Download Android APK
             </a>
 
             <a
