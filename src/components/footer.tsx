@@ -110,34 +110,40 @@ export default function Footer() {
 
 
           {/* ===================================================== */}
-          {/* RESOURCES */}
+          {/* OUR MEMBERS */}
           {/* ===================================================== */}
 
           <div>
 
             <h3 className="text-xs font-semibold text-white sm:text-sm">
-              Resources
+              Our Members
             </h3>
 
             <ul className="mt-4 space-y-2 text-xs text-white/55 sm:text-sm">
 
-              <li className="cursor-pointer transition-colors hover:text-[#EAF8FA]">
-                AEDEX User Guide
+              <li>
+                Joeross G. Palabrica
               </li>
 
-              <li className="cursor-pointer transition-colors hover:text-[#EAF8FA]">
-                Research & Documentation
+              <li>
+                Axel John E. Nuqui
               </li>
 
-              <li className="cursor-pointer transition-colors hover:text-[#EAF8FA]">
-                Privacy Policy
+              <li>
+                Joelmar D. Grecia
               </li>
 
-              <li className="cursor-pointer transition-colors hover:text-[#EAF8FA]">
-                Terms of Service
+              <li>
+                Jethro A. Rendon
               </li>
 
             </ul>
+
+            <p className="mt-4 text-[10px] leading-4 text-white/40 sm:text-xs">
+              BSCS 4-B
+              <br />
+              Bachelor of Science in Computer Science
+            </p>
 
           </div>
 
